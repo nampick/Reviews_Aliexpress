@@ -5,6 +5,15 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+// import { NextUIProvider } from "@nextui-org/react";
+import {
+  NextUIProvider,
+  Button,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+} from "@nextui-org/react";
 
 import "./tailwind.css";
 
@@ -20,7 +29,6 @@ export const links = () => [
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
 ];
-
 export function Layout({ children }) {
   return (
     <html lang="en">
@@ -31,14 +39,20 @@ export function Layout({ children }) {
         <Links />
       </head>
       <body>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
+        <NextUIProvider>
+          {children}
+          <ScrollRestoration />
+          <Scripts />
+        </NextUIProvider>
       </body>
     </html>
   );
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <NextUIProvider>
+      <Outlet />
+    </NextUIProvider>
+  );
 }
