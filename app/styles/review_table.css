@@ -1,0 +1,97 @@
+.table-container2 {
+  width: 100%; /* Chiều rộng của container chiếm toàn bộ chiều rộng */
+  max-width: 1200px;
+  max-height: 500px; /* Chiều rộng tối đa của bảng */
+  margin: 0 auto; /* Căn giữa bảng */
+  overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+  font-family: "Arial", sans-serif; /* Font chữ cho toàn bộ bảng */
+  font-size: 14px; /* Kích thước chữ cho toàn bộ bảng */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+table {
+  width: 100%; /* Bảng chiếm toàn bộ chiều rộng của container */
+  border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+}
+
+th,
+td {
+  padding: 12px; /* Khoảng cách bên trong ô */
+  text-align: left; /* Căn trái nội dung */
+  border-bottom: 1px solid #ddd;
+  text-align: center; /* Đường kẻ dưới các ô */
+}
+
+th {
+  background-color: #f2f2f2; /* Màu nền cho tiêu đề bảng */
+}
+
+/* Đặt kích thước cố định cho cột Review Content */
+td:nth-child(4),
+th:nth-child(4) {
+  width: 250px; /* Chiều rộng cố định cho cột Review Content */
+  max-height: 100px; /* Chiều cao tối đa cho ô */
+  overflow: hidden; /* Ẩn nội dung tràn */
+  text-overflow: ellipsis; /* Hiển thị dấu "..." khi nội dung dài */
+  white-space: normal;
+  /* Cho phép xuống dòng trong cột này */
+}
+
+td:nth-child(4) {
+  display: block; /* Thay đổi để có thể điều chỉnh chiều cao */
+  line-height: 1.2; /* Khoảng cách giữa các dòng */
+}
+td:nth-child(2),
+th:nth-child(2) {
+  width: 100px; /* Chiều rộng cố định cho cột User Name */
+  max-height: 50px; /* Chiều cao tối đa cho ô nếu cần */
+  overflow: hidden; /* Ẩn nội dung tràn */
+  text-overflow: ellipsis; /* Hiển thị dấu "..." khi nội dung dài */
+  white-space: nowrap; /* Không cho phép xuống dòng trong cột này */
+}
+td:nth-child(3),
+th:nth-child(3) {
+  width: 100px; /* Chiều rộng cố định cho cột User Name */
+  max-height: 50px; /* Chiều cao tối đa cho ô nếu cần */
+  overflow: hidden; /* Ẩn nội dung tràn */
+  text-overflow: ellipsis; /* Hiển thị dấu "..." khi nội dung dài */
+  white-space: nowrap; /* Không cho phép xuống dòng trong cột này */
+}
+td:nth-child(1),
+th:nth-child(1) {
+  width: 100px; /* Chiều rộng cố định cho cột User Name */
+  max-height: 50px; /* Chiều cao tối đa cho ô nếu cần */
+  overflow: hidden; /* Ẩn nội dung tràn */
+  text-overflow: ellipsis; /* Hiển thị dấu "..." khi nội dung dài */
+  white-space: nowrap; /* Không cho phép xuống dòng trong cột này */
+}
+td:nth-child(6),
+th:nth-child(6) {
+  width: 40px; /* Chiều rộng cố định cho cột User Name */
+  max-height: 50px; /* Chiều cao tối đa cho ô nếu cần */
+  overflow: hidden; /* Ẩn nội dung tràn */
+  text-overflow: ellipsis; /* Hiển thị dấu "..." khi nội dung dài */
+  white-space: nowrap; /* Không cho phép xuống dòng trong cột này */
+}
+td:nth-child(7),
+th:nth-child(7) {
+  width: 40px; /* Chiều rộng cố định cho cột User Name */
+  max-height: 50px; /* Chiều cao tối đa cho ô nếu cần */
+  overflow: hidden; /* Ẩn nội dung tràn */
+  text-overflow: ellipsis; /* Hiển thị dấu "..." khi nội dung dài */
+  white-space: nowrap; /* Không cho phép xuống dòng trong cột này */
+}
+img {
+  max-width: 50px; /* Chiều rộng tối đa của hình ảnh */
+  height: auto; /* Chiều cao tự động để giữ tỉ lệ */
+}
+.nameproduct {
+  font-size: 16px; /* Kích thước chữ là 16px */
+  font-weight: bold; /* Đặt chữ in đậm */
+  display: block; /* Hiển thị dưới dạng khối (block) */
+  margin: 0; /* Xóa lề mặc định nếu cần */
+  text-align: center;
+  color: red;
+}

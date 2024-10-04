@@ -7,7 +7,7 @@ export const action = async ({ request }) => {
   const returnTo = "http://localhost:5173/";
 
   await authenticator.logout(request, {
-    redirectTo: "http://localhost:5173/home",
+    redirectTo: "http://localhost:5173/",
   });
 
   return redirect(
