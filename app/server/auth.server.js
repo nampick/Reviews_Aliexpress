@@ -20,7 +20,7 @@ export const authenticator = new Authenticator(sessionStorage);
 // Cấu hình Auth0 strategy
 const auth0Strategy = new Auth0Strategy(
   {
-    callbackURL: "http://localhost:5173/auth/auth0/callback",
+    callbackURL: "https://importify.io/auth/auth0/callback",
     clientID: "UpT0esnQTQjHDg2wBr4MMBQexfZvsFs2",
     clientSecret:
       "TRtNxvwmRbwV1dwhl7sK7C-x2QrFYbl36cQQxpQA8kASU6TgjAGEzVe8pI2l5pQV",
